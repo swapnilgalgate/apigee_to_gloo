@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AddHeaders">
+    <Add>
+        <Headers>
+            <Header name="x-gateway">apigee</Header>
+            <Header name="x-migration-target">gloo</Header>
+        </Headers>
+    </Add>
+    <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>

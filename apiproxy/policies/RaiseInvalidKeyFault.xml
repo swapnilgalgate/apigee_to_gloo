@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault async="false" continueOnError="false" enabled="true" name="RaiseInvalidKeyFault">
+    <FaultResponse>
+        <Set>
+            <StatusCode>401</StatusCode>
+            <ReasonPhrase>Unauthorized</ReasonPhrase>
+            <Payload contentType="application/json">
+                {"error":"Invalid API Key"}
+            </Payload>
+        </Set>
+    </FaultResponse>
+</RaiseFault>
